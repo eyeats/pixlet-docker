@@ -1,5 +1,5 @@
 # pixlet-docker
-A docker container for running Tidbyt Pixlet 
+A dockerfile for [Tidbyt Pixlet](https://github.com/tidbyt/pixlet) 
 
 ## Build 
 
