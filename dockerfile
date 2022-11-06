@@ -1,7 +1,11 @@
-FROM golang:bullseye
+FROM golang:alpine
 ENV REPO=$GOPATH/pixlet
 
-RUN apt-get update && apt-get install -y libwebp-dev npm
+#RUN apt-get update && apt-get install -y libwebp-dev npm 
+RUN apk update && \
+    apk upgrade -U && \
+    apk add npm git make gcc ca-certificates ffmpeg libwebp libwebp-tools && \
+    rm -rf /var/cache/*
 
 RUN git clone https://github.com/tidbyt/pixlet.git $REPO 
 WORKDIR $REPO
