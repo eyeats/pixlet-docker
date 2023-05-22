@@ -29,6 +29,14 @@ Navigate to localhost:8080 on your host machine.
 
 If you are developing a tidbyt pixlet app in a local folder, you can run this container and serve it automatically to port 8080, automatically refreshing with local changes:
 
+### Windows
 ``` bash
 docker run --rm -it -p 8080:8080 -v C:\src\pixlet-docker\examples:/srv pixlet pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
 ```
+
+### Linux
+``` bash
+docker run --rm -it -p 8080:8080 -v /usr/src/pixlet-docker/examples:/srv pixlet pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
+```
+
+
