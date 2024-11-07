@@ -31,12 +31,12 @@ If you are developing a tidbyt pixlet app in a local folder, you can run this co
 
 ### Windows
 ``` bash
-docker run --rm -it -p 8080:8080 -v C:\src\pixlet-docker\examples:/srv pixlet pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
+docker run --rm -it -p 8080:8080 -v C:\src\pixlet-docker\examples:/srv pixlet ./pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
 ```
 
 ### Linux
 ``` bash
-docker run --rm -it -p 8080:8080 -v /usr/src/pixlet-docker/examples:/srv pixlet pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
+docker run --rm -it -p 8080:8080 -v /usr/src/pixlet-docker/examples:/srv pixlet ./pixlet serve -i 0.0.0.0 -w /srv/sports_scores.star
 ```
 
 
